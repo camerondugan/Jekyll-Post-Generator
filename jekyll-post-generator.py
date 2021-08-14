@@ -130,7 +130,7 @@ def genFileName(path):
                 grabBag = addCharToGrabBag(c,grabBag)
     name = createString(20,grabBag,True)
     name = datetime.today().strftime('%Y-%m-%d-') + name
-    name += '.md'
+    name += '-bot.md'
     return name
 
 def main(ac,length):
@@ -141,7 +141,7 @@ def main(ac,length):
     output = open(f'output/{name}','w')
     output.write("---\n")
     headerTags = ['title: ','header: ','description: ','layout: ','permalink: ']
-    setAccuracy(2)
+    setAccuracy(3)
     for tag in headerTags:
         grabBag = genGrabBag(path,True,tag)
         generate(output,2000,grabBag,True)
