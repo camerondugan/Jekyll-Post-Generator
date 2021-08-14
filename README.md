@@ -8,3 +8,4 @@ Goals:
 - [X] Generate the first 'n' number of characters programmatically
 - [X] Generate accurate jekyll header
 - [X] Generate accurate jekyll md file name
+- [X] Basic user input for number of files, file length, and accuracy
