@@ -140,7 +140,8 @@ def main(ac,length):
     print(name)
     output = open(f'output/{name}','w')
     output.write("---\n")
-    headerTags = ['title: ','header: ','description: ','layout: ','permalink: ']
+    output.write("title: " + name[11:-3] + '\n')
+    headerTags = ['header: ','description: ','layout: ','permalink: ']
     setAccuracy(3)
     for tag in headerTags:
         grabBag = genGrabBag(path,True,tag)
